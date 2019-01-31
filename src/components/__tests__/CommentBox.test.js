@@ -35,10 +35,12 @@ it("has text area where user can input", () => {
     expect(wrapped.find('textarea').prop('value')).toEqual('new comment');
 });
 
-it('Updates text area value', () => {
-
-    wrapped.find('textarea').simulate('change', {target: { value: 'new comment'}});
+it("has a textarea for input",()=>{
+    wrapped.find('textarea').simulate('change', {
+        target: {
+            value: 'new comment'
+        }
+    });
     wrapped.update();
     expect(wrapped.find('textarea').prop('value')).toEqual('new comment');
-
 });
