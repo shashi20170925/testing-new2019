@@ -23,7 +23,7 @@ it('has text area and a button', () => {
     //let wrapped = mount(<CommentBox/>)
     //expect(actual predicate).wxpwcted predicate/value
     expect(wrapped.find('textarea').length).toEqual(1);
-    expect(wrapped.find('button').length).toEqual(1);
+    expect(wrapped.find('button').length).toEqual(2);
     expect(3 > 1).toEqual(true);
 });
 

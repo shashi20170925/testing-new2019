@@ -23,6 +23,7 @@ import * as actions from 'actions';
     }
     render(){
         return (
+            <div>
             <form onSubmit={this.onCommentSubmit}>
                 <h4>Add A comment</h4>
                 <textarea onChange={this.handleChange} value={this.state.comment}/>
@@ -32,6 +33,8 @@ import * as actions from 'actions';
                 </div>
 
             </form>
+            <button className="fetch-comments" onClick={this.props.fetchComments}>Get Comments</button>
+            </div>
         );
     }
 }
