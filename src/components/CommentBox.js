@@ -14,6 +14,7 @@ import * as actions from 'actions';
         });
     }
     onCommentSubmit = (event) => {
+        console.log('in the submit ',this.props );
         event.preventDefault();
         this.props.saveComment(this.state.comment);
         this.setState({
