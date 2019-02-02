@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actions from 'actions';
+import requireAuth from 'components/reqAuth';
 
 
  class CommentBox extends Component{
+
+
     state={
         comment: ''
     };
@@ -39,4 +42,6 @@ import * as actions from 'actions';
     }
 }
 
-export default connect(null,actions)(CommentBox);
+
+
+export default connect(null, actions)(requireAuth(CommentBox));
